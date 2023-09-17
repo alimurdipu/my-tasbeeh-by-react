@@ -52,7 +52,7 @@ function App() {
   return (
     <>
       <div className='flex flex-col'>
-      <div className="w-8/12 h-[83vh] mx-auto flex justify-center items-center bg-[#7887AB] tasbeeh-container">
+      <div className="lg:w-8/12 w-full lg:h-[83vh] h-[95vh] mx-auto flex justify-center items-center bg-[#7887AB] tasbeeh-container">
         <Tasbeeh countNumber={countNumber} addNumber={addNumber} removeNumber={removeNumber} resetNumber={resetNumber}></Tasbeeh>
         <ToastContainer/>
       </div>
