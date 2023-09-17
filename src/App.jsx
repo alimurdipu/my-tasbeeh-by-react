@@ -12,8 +12,10 @@ function App() {
       const [countNumber, setcountNumber] = useState(0);
 
       const addNumber = () => {
-        
         const newCountNumber = countNumber + 1;
+        if(newCountNumber > 100){
+          return setcountNumber(0)
+        }
         setcountNumber(newCountNumber);
         if(newCountNumber <= 33){
           new Audio(subahanallah).play()
